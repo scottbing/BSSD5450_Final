@@ -16,7 +16,7 @@ speak_bulb.py    - SenseHat Simulation
 Reverse engineering a smart device involves using diagnostic tracing and capture facilities that trap commands and data streams over the network.  This is the process that was used for the execution of this project.  The [Nordic nRF Connect](https://play.google.com/store/apps/details?id=no.nordicsemi.android.mcp) application was an invaluable tool.  It allows for the capture of Bluetooth and WiFi transmissions.  It was used to determine the applicable manufactures' commands.  The Bluetooth technology is based upon a GATT server protocol.  The GATT server protocol is composed of characteristics.  These characteristics define the operation that occurs against the lighting devices.  These operations include read, write, and property toggle.  Once the syntax of the commands was determined,  they could be inserted into scripts and programs.
 <p>A second backup project was developed using the Raspberry Pi Sense Hat facility.  The intention was to develop a similar project where the lights would be simulated on a sense hat device instead of a hub.  Light on, light off, light dim, light brighten, and light color change functions ar simulated on this project.</p> 
 
-(images\initial_screen.PNG)
+![alt text](images\initial_screen.PNG)
 
 
 ### Prerequisites
