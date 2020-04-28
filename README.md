@@ -29,7 +29,7 @@ phillips_bulb.py script
 
 ### Installing
 ```
-<H5>Software required</H5>
+**Software required**
 Raspian Operating System
 Python Interpreter Compiler
 Bluetooth software - bluez
