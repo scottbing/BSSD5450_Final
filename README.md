@@ -1,4 +1,5 @@
-# Project Title
+# BSSD5450 Ambient Computing
+### Final Project
 
 One Paragraph of project description goes here
 
