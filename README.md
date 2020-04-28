@@ -19,15 +19,21 @@ Reverse engineering a smart device involves using diagnostic tracing and capture
 
 ### Prerequisites
 
-What things you need to install the software and how to install them
+Required Materials
 
 ```
-Give examples
+Raspberry Pi 3
+Phillips Hue Light Bulb (any Model)
+phillips_bulb.py script
 ```
 
 ### Installing
 
-A step by step series of examples that tell you how to get a development env running
+Software required
+Raspian Operating System
+Python Interpreter Compiler
+Bluetooth software - bluez
+Gatt software - gatlib
 
 Say what the step will be
 
@@ -45,7 +51,7 @@ End with an example of getting some data out of the system or using it for a lit
 
 ## Running the tests
 
-Explain how to run the automated tests for this system
+Mak esure light bulb is turned on
 
 ### Break down into end to end tests
 
