@@ -1,7 +1,7 @@
 # BSSD5450 Ambient Computing
 ### Final Project
 
-Originally the project was intended to demonstrate a home lighting IOT system. It was to involve the control of home lighting from a smartphone application. In an effort to keep costs to a minimum, a simple white LED bulb was chosen.  Two light bulbs were selected, a Smart LED Bulb and a Phillips Hue White Blanco Model A19. The Smart LED bUlb did not offer a public API.  The Phillips organization, on the other hand, not only exposes their API, but they also encourage hobbyists to develop lighting implementations.  Phillips provides a lighting SDK and coordinates a developer's interest group.   
+Originally this project was intended to demonstrate a home lighting IOT system. It was to involve the control of home lighting from a smartphone application. In an effort to keep costs to a minimum, a simple white LED bulb was chosen.  Two light bulbs were selected, a Smart LED Bulb and a Phillips Hue White Blanco Model A19. The Smart LED bUlb did not offer a public API.  The Phillips organization, on the other hand, not only exposes their API, but they also encourage hobbyists to develop lighting implementations.  Phillips provides a lighting SDK and coordinates a developer's interest group.   
 
 ## Getting Started
 
