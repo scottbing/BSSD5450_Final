@@ -12,6 +12,13 @@ The final project consists of two python programs. phillips_bulb.py controls a P
 phillips_bulb.py
 speak_bulb.py
 
+```
+$ sudo hcitool lescan
+LE Scan ...
+44:A6:E5:01:57:CF (unknown)
+44:A6:E5:01:57:CF M129617E98C33A86E7
+```
+
 
 ### Prerequisites
 
