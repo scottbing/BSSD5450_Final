@@ -7,7 +7,11 @@ https://developers.meethue.com/develop/get-started-2/
 
 ## Getting Started
 
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
+The final project consists of two python programs. phillips_bulb.py controls a Phillips Hue Light bulb.
+
+phillips_bulb.py
+speak_bulb.py
+
 
 ### Prerequisites
 
