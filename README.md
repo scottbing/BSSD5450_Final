@@ -7,15 +7,12 @@ https://developers.meethue.com/develop/get-started-2/
 
 ## Getting Started
 
-The final project consists of two python programs. phillips_bulb.py controls a Phillips Hue Light bulb.
+The final project consists of two python programs
 
-phillips_bulb.py
-speak_bulb.py
+phillips_bulb.py - Phillips Hue Light
+speak_bulb.py    - SenseHat Simulation
 
-```
-phillips_bulb.py
-speak_bulb.py
-```
+
 
 
 ### Prerequisites
