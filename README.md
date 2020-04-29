@@ -30,7 +30,7 @@ The Hue bulb is displayed at the bottom of the screen.  This is the screen that 
 
 This screen contains a list of Services. The services that have the 16-bit UUIDs, the Generic Attribute, Generic Access, Device Information are all standard.  They are defined by the Bluetooth SIG's RFP.  The UUID's are documented here. The 128-bit Unknown Characteristics are manufacture custom UUIDs. Note that they are all defined as Primary services.  The next screen appears when one of these Services is selected. 
 
-![alt text](/assets/images/characteristics01.PNG)
+![alt text](/assets/images/characteristics01)
 
 This screen shows the individual characteristics belonging to the selected service. 
 So armed with this information, the application Wireshark was used to capture the exact commands that were issued to change the state of the light bulb. This particular light bulb has three settings, dim light, bright light, and night light. Using the smartphone app that accompanies the light bulb continually dimmed the lights several times.
