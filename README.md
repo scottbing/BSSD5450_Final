@@ -19,19 +19,26 @@ Reverse engineering a smart device involves using diagnostic tracing and capture
 ![alt text](/assets/images/initial_screen.jpg)
 
 My final project controls a Phillips Hue Smart Light bulb with a python application.  In order to figure out what Bluetooth commands to send to the device, I had to use a utility that exposed the light bulb's GATT.  I used the Nordic Master Console application to accomplish this.  This is a no-cost application that can be freely downloaded and installed on a smartphone ora tablet.  With this application, I was able to connect to the light bulb and view its internal GATT structure.  
-The application opens with the device discovery screen.   Upon the first visit to the application, the scan function must be initiated. This is a one=time operation. When tha application is opened again, a scan will b automatically performed so any new devices will be discovered. This scan discovers any Bluetooth devices within a fifty-meter range.  This is the standard range of a Bluetooth 4.x device.
-After discovering the devices, this is the screen that appears.  It shows all of the discovered devices.  If the device is connectable, it will also displays a Connect button. 
- 
+The application opens with the device discovery screen.   Upon the first visit to the application, the scan function must be initiated. This is a one=time operation. When the application is opened again, a scan will b automatically performed so any new devices will be discovered. This scan discovers any Bluetooth devices within a fifty-meter range.  This is the standard range of a Bluetooth 4.x device.
+After discovering the devices, this is the screen that appears.  It shows all of the discovered devices.  If the device is connectable, it will also display a Connect button. 
+![alt text](/assets/images/initial_screen.jpg)
 
 The Hue bulb is displayed at the bottom of the screen.  This is the screen that appears when the Connect Button is chosen
- 
-This screen contains a list of Services. The services that have the 16-bit UUIDs, the Generic Attribute, Generic Access, Device Information are all standard.  They are defined by the Bluetooth SIG's RFP.  The UUID's are documented here. The 128-bit Unknown Characteristics are manufacture custom UUID's. Note that they are all defined as Primary services.  The next screen appears when one of these Services is selected. 
- 
+![alt text](/assets/images/detail_screen.PNG)
+
+This screen contains a list of Services. The services that have the 16-bit UUIDs, the Generic Attribute, Generic Access, Device Information are all standard.  They are defined by the Bluetooth SIG's RFP.  The UUID's are documented here. The 128-bit Unknown Characteristics are manufacture custom UUIDs. Note that they are all defined as Primary services.  The next screen appears when one of these Services is selected. 
+![alt text](/assets/images/characteristics.PNG)
+
 This screen shows the individual characteristics belonging to the selected service. 
-So armed with this information, the application Wireshark was used to capture the exact commands that were issued to change the state of the light bulb. This particular light bulb has three settings, dim light, bright light, and night light  Using the smartphone app that accompanies the light bulb continually dimmed the lights several times.
+So armed with this information, the application Wireshark was used to capture the exact commands that were issued to change the state of the light bulb. This particular light bulb has three settings, dim light, bright light, and night light. Using the smartphone app that accompanies the light bulb continually dimmed the lights several times.
 Then I captured the trace information from my phone.  My phone is an Amsunge (s Android phone.  This phone contains a Bluetooth log called hci_btsnoop.log.  Unfortunately, my phone does not have an SDCard.  So I had to enable the Bluetooth HCI Snoop Log. And then select Tale a Bug Report.  This is the way it must be done if the phone does not have an SDCard.  If the phone has an SDCard, the hci_bootnoop.log can simply be found and downloaded from the SDCard.emulated.0 directory. Android provides a python program called bstnooz.py that can be used to extract the hci_btsnoop.log from the Bug Report.  The btsnooz.log can simply be opened in Wireshark. 
- 
-I matched this data against the data reported on the nrfConnect and I was abel to determine the code for dim the lights.
+![alt text](/assets/images/wireshark.PNG)
+
+I matched this data against the data reported on the nrfConnect, and I was able to determine the code for dim the lights.
+
+
+
+
 
 ### Prerequisites
 
